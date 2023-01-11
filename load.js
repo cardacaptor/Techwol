@@ -22,18 +22,18 @@ for (var i = 0; i < popoverTriggers.length; i++) {
 
 const removePopOver = () => {
 	for (var i in popoverWidget) {
-		if (popoverWidget[i].classList.contains('popover--active')) {
-			popoverWidget[i].classList.remove('popover--active');
-			popoverWidget[i].className += " popover--inactive";
+		if (popoverWidget[i].classList.contains('popover--show')) {
+			popoverWidget[i].classList.remove('popover--show');
+			popoverWidget[i].className += " popover--hide";
 		}
 	}
 }
 const addPopOver = () => {
 	for (var i in popoverWidget) {
 
-		if (!popoverWidget[i].classList.contains('popover--active')) {
-			popoverWidget[i].classList.remove('popover--inactive');
-			popoverWidget[i].className += " popover--active";
+		if (!popoverWidget[i].classList.contains('popover--show')) {
+			popoverWidget[i].classList.remove('popover--hide');
+			popoverWidget[i].className += " popover--show";
 		}
 	}
 }
