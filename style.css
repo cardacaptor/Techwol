@@ -137,13 +137,13 @@ body {
     border-width: 30px;
 }
 
-.thirdContainer .popover-button .popover--active {
+.thirdContainer .popover-button .popover--show {
     transform: scale(1);
     display: block;
     opacity: 1;
 }
 
-.thirdContainer .popover-button .popover--inactive {
+.thirdContainer .popover-button .popover--hide {
     height: 0;
 }
 
