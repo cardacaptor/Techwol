@@ -12,18 +12,30 @@ for (var i = 0; i < popoverTriggers.length; i++) {
 		closeAllOthers()
 		if (!cont) {
 			this.classList.toggle('popover--active')
-		}
-		for (var i in popoverWidget) {
-			if (popoverWidget[i].classList.contains('popover--active')) {
-				popoverWidget[i].classList.remove('popover--active');
-				popoverWidget[i].className += " popover--inactive";
-			} else {
-				popoverWidget[i].classList.remove('popover--inactive');
-				popoverWidget[i].className += " popover--active";
-			}
+			addPopOver()
+		} else {
+			removePopOver()
 		}
 	}
 	)
+}
+
+const removePopOver = () => {
+	for (var i in popoverWidget) {
+		if (popoverWidget[i].classList.contains('popover--active')) {
+			popoverWidget[i].classList.remove('popover--active');
+			popoverWidget[i].className += " popover--inactive";
+		}
+	}
+}
+const addPopOver = () => {
+	for (var i in popoverWidget) {
+
+		if (!popoverWidget[i].classList.contains('popover--active')) {
+			popoverWidget[i].classList.remove('popover--inactive');
+			popoverWidget[i].className += " popover--active";
+		}
+	}
 }
 
 const closeAllOthers = () => {
