@@ -205,3 +205,77 @@ body {
     /* padding-left: 50px;
     padding-right: 50px; */
 }
+
+.fourthContainer .businessPlan {
+    background-color: white;
+    /* width: 593px; */
+    height: 400px;
+    position: inherit;
+    overflow: hidden;
+}
+
+.fourthContainer .businessPlan p {
+    color: #808080;
+}
+
+.fourthContainer .businessPlan .bottomCircle {
+    position: absolute;
+    right: -35px;
+    bottom: -70px;
+}
+
+.fourthContainer .businessPlan .bottomCircle2 {
+    position: absolute;
+    right: -45px;
+    bottom: -70px;
+}
+
+.fourthContainer .businessPlan img {
+    width: 339px;
+    height: 339px;
+    object-fit: cover;
+}
+
+a {
+    color: #000066;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #062445;
+}
+
+.fourthContainer section {
+    overflow: hidden;
+}
+
+.fourthContainer section .smallCircle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #000066;
+    position: absolute;
+    bottom: -40px;
+}
+
+.fourthContainer section h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+.fourthContainer section h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0 0 -65px;
+
+}
+
+.fourthContainer section .chip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0 0 -40px;
+
+}
