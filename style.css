@@ -15,7 +15,8 @@ body {
     color: white;
 }
 
-.secondContainer .pr-4, .px-4 {
+.secondContainer .pr-4,
+.px-4 {
     padding-right: 8.5rem !important;
 }
 
@@ -47,9 +48,16 @@ body {
     bottom: 10px;
     left: 128px;
 }
-.thirdContainer{
+
+.thirdContainer {
     position: relative;
+
 }
+
+.thirdContainer .popovers {
+    display: flex;
+}
+
 .thirdContainer .solution-container {
     height: 144px;
     width: 286px;
@@ -57,14 +65,16 @@ body {
     margin-top: 30px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
     margin-right: 2%;
+
 }
 
-.thirdContainer .scroll__container .popover--active .solution-container{
+.thirdContainer .scroll__container .popover-button .popover--active {
     background-color: #000066;
+
 }
 
-.thirdContainer .scroll__container .popover--active .solution-container p{
-   color: white;
+.thirdContainer .scroll__container .popover-button .popover--active p {
+    color: white;
 }
 
 .thirdContainer .popover-button {
@@ -99,7 +109,6 @@ body {
     margin: 44px 0;
     /* width: 100%; */
     width: 100vw;
-    position: absolute;
     top: 100%;
     left: 0;
     box-shadow: 0 2px 3px 0 rgba(63, 63, 68, 0.5);
@@ -128,10 +137,14 @@ body {
     border-width: 30px;
 }
 
-.thirdContainer .popover--active .solution_popover {
+.thirdContainer .popover-button .popover--active {
     transform: scale(1);
     display: block;
     opacity: 1;
+}
+
+.thirdContainer .popover-button .popover--inactive {
+    height: 0;
 }
 
 .thirdContainer .chip {
