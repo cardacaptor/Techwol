@@ -144,7 +144,7 @@ body {
 }
 
 .thirdContainer .popover-button .popover--hide {
-    height: 0;
+    height: 0 !important;
 }
 
 .thirdContainer .chip {
