@@ -2,57 +2,54 @@ var popovers = document.querySelectorAll(".popovers .solution-container");
 var popoverTriggers = document.querySelectorAll(".popover__trigger");
 var popoverWidget = document.querySelectorAll(".solution_popover");
 
+function eventHandler(event) {
+  var cont = this.classList.contains("popover--active");
+  closeAllOthers();
+  if (!cont) {
+    this.classList.toggle("popover--active");
+    addPopOver(event.currentTarget.indexInHtml);
+    remove.leftScrol();
+    remove.rightScrol();
+  }
+}
+
 for (var i = 0; i < popoverTriggers.length; i++) {
-  popoverTriggers[i].addEventListener("click", async function (event) {
-    // if (!this.classList.contains('popover--active')) {
-    // 	this.classList.toggle('popover--active')
-    // }
-    // this.className += 'popover--active'
-    var cont = this.classList.contains("popover--active");
-    closeAllOthers();
-    if (!cont) {
-      this.classList.toggle("popover--active");
-      addPopOver();
-    } else {
-      removePopOver();
-    }
-  });
+  popoverTriggers[i].addEventListener("click", eventHandler);
+  popoverTriggers[i].indexInHtml = i;
 }
 
 const removePopOver = () => {
-  for (var i in popoverWidget) {
-    if (popoverWidget[i].classList.contains("popover--show")) {
-      popoverWidget[i].classList.remove("popover--show");
-      popoverWidget[i].className += " popover--hide";
-	  remove.leftScroll();
-	  remove.rightScroll();
+  for (var i of popoverWidget) {
+    if (i.classList.value.includes("popover--show")) {
+      i.classList.remove("popover--show");
+      i.className += " popover--hide";
+      remove.leftScrol();
+      remove.rightScrol();
     }
   }
 };
-const addPopOver = () => {
-  for (var i in popoverWidget) {
-    if (!popoverWidget[i].classList.contains("popover--show")) {
-      popoverWidget[i].classList.remove("popover--hide");
-      popoverWidget[i].className += " popover--show";
-	  remove.leftScroll();
-	  remove.rightScroll();
-    }
+const addPopOver = (j) => {
+  if (!popoverWidget[j].classList.contains("popover--show")) {
+    popoverWidget[j].classList.remove("popover--hide");
+    popoverWidget[j].className += " popover--show";
+    remove.leftScrol();
+    remove.rightScrol();
   }
 };
 
 const closeAllOthers = () => {
+  removePopOver();
   for (var i = 0; i < popoverTriggers.length; i++) {
     popoverTriggers[i].classList.remove("popover--active");
   }
 };
 
-//for scrolling
-function leftScroll() {
-  const left = document.querySelector(".scroll__container");
+function leftScrol() {
+  const left = document.querySelector(".trying");
   left.scrollBy(200, 0);
 }
-function rightScroll() {
-  const right = document.querySelector(".scroll__container");
+function rightScrol() {
+  const right = document.querySelector(".trying");
   right.scrollBy(-200, 0);
 }
 
@@ -64,4 +61,3 @@ function rightScroll() {
   const right = document.querySelector(".clientContainer");
   right.scrollBy(-200, 0);
 }
-
