@@ -8,6 +8,7 @@
     <title>Techwol</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/style.css">
 
 </head>
@@ -84,27 +85,44 @@
     </div>
     <div class="thirdContainer pl-5 py-3">
         <h1>Solutions built right for every type of business.</h1>
-        <div class="scroll__container">
+        <button class="left" onclick="rightScroll()">&lt;</button>
+        <div class="pl-2 scroll__container demo-scroll">
             <div class="popover-button pr-4">
                 <div class="popovers">
-                    <div class="solution-container rounded px-3 py-2 popover__trigger " id="popBottom"
-                        data-toggle="popover" title="Popover title" data-content="Popover on bottom">
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
                         <p class="header">Business consulation</p>
-                        <p>Power your business with super-fast internet, with speeds up to 1000/500 Mbps in select
+                        <p class="subHead">Power your business with super-fast internet, with speeds up to 1000/500 Mbps
+                            in select
                             areas.
                         </p>
                     </div>
-                    <div class="solution-container rounded px-3 py-2  popover__trigger">
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
                         <p class="header">Software Development</p>
-                        <p>Cheaper, faster, and easier switching system for your business.</p>
+                        <p class="subHead">Cheaper, faster, and easier switching system for your business.</p>
                     </div>
-                    <div class="solution-container rounded px-3 py-2  popover__trigger">
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
                         <p class="header">Digital Marketing</p>
-                        <p>Run your mobile telephony as you run your business.</p>
+                        <p class="subHead">Run your mobile telephony as you run your business.</p>
                     </div>
-                    <div class="solution-container rounded px-3 py-2  popover__trigger">
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
                         <p class="header">RPA- for FMCG Businesses</p>
-                        <p>Experience a much better telephone solution with high security connection.</p>
+                        <p class="subHead">Experience a much better telephone solution with high security connection.
+                        </p>
+                    </div>
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
+                        <p class="header">RPA- for FMCG Businesses</p>
+                        <p class="subHead">Experience a much better telephone solution with high security connection.
+                        </p>
+                    </div>
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
+                        <p class="header">RPA- for FMCG Businesses</p>
+                        <p class="subHead">Experience a much better telephone solution with high security connection.
+                        </p>
+                    </div>
+                    <div class="solution-container rounded px-3 py-2 popover__trigger">
+                        <p class="header">RPA- for FMCG Businesses</p>
+                        <p class="subHead">Experience a much better telephone solution with high security connection.
+                        </p>
                     </div>
                 </div>
                 <!-- POPOVER -->
@@ -154,13 +172,15 @@
                                 <h5 style="color: #062445;">+977 9802654356</h5>
                             </div>
                         </div>
-                        <p>*Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                        <p>*Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        </p>
                         <u>
                             <a href="#">Learn more about business internet here</a></u>
                     </div>
                 </div>
             </div>
         </div>
+        <button class="right" onclick="leftScroll()">&gt;</button>
     </div>
     <div class="fourthContainer px-5">
         <h1>The connectivity business needs with the plans you want</h1>
@@ -232,17 +252,32 @@
                 </div>
                 <div class="col justify-content-center">
                     <h3>Or we'll call you</h3>
-                    <button type="button" class="btn btn-outline-primary rounded-pill"
-                        style="border:1px solid #000066; color: #000066; ">Request a
+                    <button type="button" class="btn btn-outline-primary rounded-pill">Request a
                         call</button>
 
                 </div>
             </div>
         </section>
     </div>
-    <div class="fifthContainer mx-5 my-3 p-4">
+    <div class="fifthContainer mx-5 my-3 p-4" style="position: relative;">
         <h1 class="pb-3">Our Clients</h1>
-        <div class="row ml-1">
+        <button class="left" onclick="rightScroll()">&lt;</button>
+        <div class="ml-1 scroll__container clientContainer demo-scroll">
+            <div class="clientBox mr-4">
+                <div class="center">
+                    <img src="/assets/Hilife.svg" alt="Hilife">
+                </div>
+            </div>
+            <div class="clientBox mr-4">
+                <div class="center">
+                    <img src="/assets/Hilife.svg" alt="Hilife">
+                </div>
+            </div>
+            <div class="clientBox mr-4">
+                <div class="center">
+                    <img src="/assets/Hilife.svg" alt="Hilife">
+                </div>
+            </div>
             <div class="clientBox mr-4">
                 <div class="center">
                     <img src="/assets/Hilife.svg" alt="Hilife">
@@ -264,47 +299,48 @@
                 </div>
             </div>
         </div>
+        <button class="right" onclick="leftScroll()">&gt;</button>
     </div>
     <div class="blogContainer mx-5 my-3 p-4">
         <h1 class="pb-3">Read our latest blogs</h1>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="d-flex demo-scroll" style="overflow-x: scroll; overflow-y: hidden;">
-                    <div class="blog-item shadow-sm mb-5 pb-2 borderradius">
+                <div class="d-flex">
+                    <div class="blog-item shadow-sm borderradius">
                         <img style="height:300px; width:300px; border-radius: 12px 12px 0px 0px ;"
                             class="boxfit d-block card-img-top" src="assets/ellipse.jpg" alt="Card image cap">
-                        <h6 class="text-left pt-2 pl-2 pr-2">SOFTWARE DEVELOPMENT
+                        <h6 class="text-left pt-2 pl-2 pr-2 text-justify">SOFTWARE DEVELOPMENT
                         </h6>
-                        <p class="card-text text-left pl-2 pr-2 description">Get the fastest and most secure
+                        <p class="text-left pl-2 pr-2">Get the fastest and most secure
                             solutions available on the market
                             today.
                         </p>
                         <a href="#" class="text-left pl-2 pr-2"> Read More</a>
                     </div>
-                    <div class="blog-item shadow-sm mb-5 pb-2 borderradius">
+                    <div class="blog-item shadow-sm borderradius">
                         <img style="height:300px; width:300px; border-radius: 12px 12px 0px 0px ;"
                             class="boxfit d-block card-img-top" src="assets/ellipse-2.jpg" alt="Card image cap">
                         <h6 class="text-left pt-2 pl-2 pr-2">DIGITAL MARKETING
                         </h6>
-                        <p class="card-text text-left pl-2 pr-2 description">Cheaper, faster, and easier switching
+                        <p class="text-left pl-2 pr-2 text-justify">Cheaper, faster, and easier switching
                             system for your business.</p>
-                        <a href="#" class="text-left pl-2 pr-2"> Read More</a>
+                        <a href="#" class="text-left pl-2 pr-2 "> Read More</a>
                     </div>
-                    <div class="blog-item shadow-sm mb-5 pb-2 borderradius">
+                    <div class="blog-item shadow-sm borderradius">
                         <img style="height:300px; width:300px; border-radius: 12px 12px 0px 0px ;"
                             class="boxfit d-block card-img-top" src="assets/ellipse-3.png" alt="Card image cap">
-                        <h6 class="text-left pt-2 pl-2 pr-2">BUSINESS CONSULATION
+                        <h6 class="text-left pt-2 pl-2 pr-2 text-justify">BUSINESS CONSULATION
                         </h6>
-                        <p class="card-text text-left pl-2 pr-2 description">Run your mobile telephony as you
+                        <p class="text-left pl-2 pb-4 pr-2">Run your mobile telephony as you
                             run your business.</p>
                         <a href="#" class="text-left pl-2 pr-2"> Read More</a>
                     </div>
-                    <div class="blog-item shadow-sm mb-5 pb-2 borderradius">
+                    <div class="blog-item shadow-sm borderradius">
                         <img style="height:300px; width:300px; border-radius: 12px 12px 0px 0px ;"
                             class="boxfit d-block card-img-top" src="assets/ellipse.jpg" alt="Card image cap">
-                        <h6 class="text-left pt-2 pl-2 pr-2">VoIP SERVICE
+                        <h6 class="text-left pt-2 pl-2 pr-2 text-justify">VoIP SERVICE
                         </h6>
-                        <p class="card-text text-left pl-2 pr-2 description">Experience a much better telephone solution
+                        <p class="text-left pl-2 pr-2">Experience a much better telephone solution
                             with high security connection.</p>
                         <a href="#" class="text-left pl-2 pr-2"> Read More</a>
                     </div>
@@ -312,7 +348,137 @@
             </div>
         </div>
     </div>
-    <div class="reviewContainer mx-5 my-3 p-4"></div>
+    <div class="reviewContainer mx-5 my-3 px-4 pb-5">
+        <div class="scroll__container demo-scroll pl-2 pb-2 ">
+            <div class="cardimg">
+                <img src="assets/ellipse-2.jpg" class="rounded-circle boxfit" alt="">
+                <div class="review_card text-center p-2 mr-4">
+                    <h3 style="padding-top: 60px;">Ashley Lawrence</h3>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                    </div>
+                    <i class="fa fa-quote-left pt-4" style="font-size:48px; color: #000066;"></i>
+                    <h4>I have been using StayConnected for
+                        more than a year now. I have been
+                        very satisfied with the internet
+                        service.</h4>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 20px;left: 271px;"></div>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 169px;left: 169px;"></div>
+                </div>
+            </div>
+            <div class="cardimg">
+                <img src="assets/ellipse-2.jpg" class="rounded-circle boxfit" alt="">
+                <div class="review_card text-center p-2 mr-4">
+                    <h3 style="padding-top: 60px;">Robert Fox</h3>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <i class="fa fa-quote-left pt-4" style="font-size:48px; color: #000066;"></i>
+                    <h4>I have been using StayConnected for
+                        more than a year now. I have been
+                        very satisfied with the internet
+                        service.</h4>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 20px;left: 271px;"></div>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 169px;left: 169px;"></div>
+                </div>
+            </div>
+            <div class="cardimg">
+                <img src="assets/ellipse-2.jpg" class="rounded-circle boxfit" alt="">
+                <div class="review_card text-center p-2 mr-4">
+                    <h3 style="padding-top: 60px;">Ester Howard</h3>
+                    <div class="ratings">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                        <span class="fa fa-star unchecked"></span>
+                    </div>
+                    <i class="fa fa-quote-left pt-4" style="font-size:48px; color: #000066;"></i>
+                    <h4>I have been using StayConnected for
+                        more than a year now. I have been
+                        very satisfied with the internet
+                        service.</h4>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 20px;left: 271px;"></div>
+                    <div class="smallCircle"
+                        style="position: relative; height: 181px;width: 181px;bottom: 169px;left: 169px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__Footer p-5">
+        <div class="row">
+            <div class="col">
+                <h2 class="header">Stay Connected</h2>
+                <p class="subHeader">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    tempor invidunt ut
+                    labore et dolore.</p>
+                <div class="p-4"></div>
+                <h3 class="message">Subscribe to our newsletter</h3>
+                <div class="input-group mt-3">
+                    <input type="text" class="form-control" placeholder="Enter your email"
+                        aria-label="Enter your email here" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+                <p class="subHeader pt-4">Copyright © 2020 <span style="color: #1DBF73;">StayConnected.dk</span> All
+                    rights reserved.</p>
+                <div>
+                    <a href="#" style="color: #1DBF73; padding-right: 20px;">FAQ</a>
+                    <a href="#" style="color: white;padding-right: 20px;">Terms & Conditions</a>
+                    <a href="#" style="color: white">Contact</a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="grid-container">
+                    <div class="grid-item text-left">
+                        <h5 style="color: #AFAFAF; font-size: 18px;">New to stay connected?</h5>
+                        <p href="#" style="color: #1DBF73; font-size: 16px;">Internet connection</p>
+                        <p class="subHeader" style="font-size: 16px;">PBX's</p>
+                        <p class="subHeader" style="font-size: 16px;">Cell phones</p>
+                        <p class="subHeader" style="font-size: 16px;">VoIP Services</p>
+                    </div>
+                    <div class="grid-item text-left">
+
+                        <h5 style="color: #AFAFAF; font-size: 18px;">Social links</h5>
+                        <div class="d-flex pt-2">
+                            <i class="fa fa-facebook" style="color: white;" aria-hidden="true"></i>
+                            <p class="subHeader pl-4" style="font-size: 16px;">Facebook</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-twitter" style="color: white;"></i>
+                            <p class="subHeader pl-3" style="font-size: 16px;">Twitter</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="fa fa-instagram" style="color: white;"></i>
+                            <p class="subHeader pl-3" style="font-size: 16px;">Instagram</p>
+                        </div>
+                    </div>
+                    <div class="grid-item text-left">
+                        <h5 style="color: #AFAFAF; font-size: 18px;">Visit us:</h5>
+                        <p class="subHeader" style="font-size: 16px;">Tudaldevi, Baluwatar, KMC 4,
+                            Kathmandu, Nepal 44600</p>
+                    </div>
+                    <div class="grid-item text-center">
+                        <p href="#" style="color: #1DBF73; font-size: 28px;">+977 9802654356</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="/load.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
