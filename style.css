@@ -141,7 +141,7 @@ body {
 
 .thirdContainer .solution_popover:after {
     bottom: 100%;
-    left: 8.5rem;
+    left: var(--lefty);
     content: " ";
     height: 26px;
     width: 54px;
