@@ -89,7 +89,7 @@ body {
     cursor: pointer;
 }
 
-.thirdContainer .solution-container:hover .header{
+.thirdContainer .solution-container:hover .header {
     color: white;
 }
 
@@ -104,7 +104,7 @@ body {
     color: #062445;
 }
 
-.thirdContainer .solution_popover {
+.thirdContainer .popover--show {
     background: #fff;
     list-style-type: none;
     margin: 44px 0;
@@ -120,7 +120,23 @@ body {
     transform-origin: top left;
     display: block;
     opacity: 0;
-    overflow: clip;
+    clip-path: inset(-100vmax 0% 0%);
+}
+
+.thirdContainer .popover--hide {
+    background: #fff;
+    list-style-type: none;
+    width: 100vw;
+    top: 100%;
+    left: 0;
+    box-shadow: 0 2px 3px 0 rgba(63, 63, 68, 0.5);
+    transition-property: transform, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    transform: scale(0.9);
+    transform-origin: top left;
+    display: block;
+    opacity: 0;
 }
 
 .thirdContainer .solution_popover:after {
@@ -145,7 +161,7 @@ body {
 }
 
 .thirdContainer .popover-button .popover--hide {
-    height: 0 !important;
+    max-height: 0 !important;
 }
 
 .thirdContainer .chip {
@@ -241,7 +257,11 @@ a {
     color: #000066;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     color: #062445;
 }
 
@@ -290,7 +310,8 @@ h1, h2, h3, h4, h5 {
     background-color: #000066;
 }
 
-@shadow =0 1px 5px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+@shadow =0 1px 5px 0 rgba(0, 0, 0, 0.01),
+0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
 .fifthContainer {
     background-color: white;
