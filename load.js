@@ -8,8 +8,6 @@ function eventHandler(event) {
   if (!cont) {
     this.classList.toggle("popover--active");
     addPopOver(event.currentTarget.indexInHtml);
-    remove.leftScrol();
-    remove.rightScrol();
   }
 }
 
@@ -23,8 +21,6 @@ const removePopOver = () => {
     if (i.classList.value.includes("popover--show")) {
       i.classList.remove("popover--show");
       i.className += " popover--hide";
-      remove.leftScrol();
-      remove.rightScrol();
     }
   }
 };
@@ -32,8 +28,6 @@ const addPopOver = (j) => {
   if (!popoverWidget[j].classList.contains("popover--show")) {
     popoverWidget[j].classList.remove("popover--hide");
     popoverWidget[j].className += " popover--show";
-    remove.leftScrol();
-    remove.rightScrol();
   }
 };
 
